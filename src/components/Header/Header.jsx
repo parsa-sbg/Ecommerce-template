@@ -10,7 +10,7 @@ import { AiOutlineShoppingCart } from "react-icons/ai";
 export default function Header() {
   return (
 
-    <div className="container items-center flex justify-between">
+    <div className="container items-center flex justify-between py-2">
       <div className='flex text-red-600'>
         <Logo />
       </div>
@@ -20,7 +20,7 @@ export default function Header() {
 
       <div className='flex items-center justify-between gap-3'>
 
-        <div className='relative min-w-0 lg:min-w-80 py-5'>
+        <div className='relative min-w-0 lg:min-w-80'>
           <input className='bg-stone-200 outline-none rounded-sm w-full h-full py-1.5 text-black pl-1 pr-6 dark:text-red-400' placeholder='What are you looking for?' type="text" />
           <FaSearch className='absolute top-0 bottom-0 right-2 my-auto' size={20} />
         </div>
