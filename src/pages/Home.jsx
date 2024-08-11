@@ -1,5 +1,6 @@
 import HomeMenu from "../components/Home/HomeMenu"
 import HomeSlider from "../components/Home/HomeSlider/HomeSlider"
+import SectionHeader from "../components/Home/SectionHeader"
 
 
 export default function Home() {
@@ -15,8 +16,15 @@ export default function Home() {
 
         <div className="col-span-12 md:col-span-9 lg:col-span-9">
           <HomeSlider />
-        </div> 
+        </div>
 
+      </div>
+
+
+      {/* flash sales */}
+      <div>
+        <SectionHeader flagName='Today’s' title='Flash Sales' />
+        
       </div>
 
 
