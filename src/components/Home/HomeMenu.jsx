@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaAngleRight } from "react-icons/fa6";
 
 
@@ -63,19 +63,7 @@ export default function HomeMenu() {
         {
             id:1003,
             name:'Sports & Outdoor'
-        },
-        {
-            id:1004,
-            name:'Baby’s & Toys'
-        },
-        {
-            id:1005,
-            name:'Groceries & Pets'
-        },
-        {
-            id:1006,
-            name:'Health & Beauty'
-        },
+        }
     ]
 
     function toggleMenu(menuId) {
