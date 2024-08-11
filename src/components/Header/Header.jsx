@@ -21,7 +21,7 @@ export default function Header() {
   return (
 
 
-    <div className='container relative'>
+    <div className='container relative border-b'>
 
       <div className="items-center flex justify-between py-2 gap-1">
         <div className='flex text-red-600'>
