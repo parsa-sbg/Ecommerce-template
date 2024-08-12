@@ -6,7 +6,7 @@ import { IoEyeOutline } from "react-icons/io5";
 
 
 
-export default function ProductBox({ imageUrl, title, price, priceBeforeOff, offPercent }) {
+export default function ProductBox({ imageUrl, title, price, priceBeforeOff, offPercent, isNew}) {
   return (
     <div>
 
@@ -23,6 +23,10 @@ export default function ProductBox({ imageUrl, title, price, priceBeforeOff, off
 
         {offPercent &&
           <span className='absolute text-xs px-2 md:text-sm md:px-4  top-2 left-2 bg-red-600 text-[#FAFAFA] py-0.5 rounded-md'>-{offPercent}%</span>
+        }
+
+        {isNew &&
+          <span className='absolute text-xs px-2 md:text-sm md:px-4  top-2 left-2 bg-green-600 text-[#FAFAFA] py-0.5 rounded-md'>new</span>
         }
 
         <button className='absolute w-full transition-all bottom-0 right-0 left-0 bg-black text-white max-h-0 overflow-hidden group-hover:max-h-10 group-hover:py-1'>Add To Cart</button>
@@ -51,6 +55,7 @@ ProductBox.propTypes = {
   title: propTypes.string,
   price: propTypes.number,
   priceBeforeOff: propTypes.number,
-  offPercent: propTypes.number
+  offPercent: propTypes.number,
+  isNew: propTypes.bool
 
 }

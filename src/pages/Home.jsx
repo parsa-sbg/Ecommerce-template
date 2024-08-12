@@ -77,6 +77,23 @@ export default function Home() {
       </div>
 
 
+      {/* Our Products */}
+      <div className="mt-28">
+        <SectionHeader flagName={'Our Products'} title={'Explore Our Products'} />
+        <div className="grid grid-cols-12 gap-5">
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'Breed Dry Dog Food'} isNew price={100} imageUrl={'/src/assets/images/ourproductsImages/dog-food.png'} /> </div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'CANON EOS DSLR Camera'} price={360} imageUrl={'/src/assets/images/ourproductsImages/camera.png'} /> </div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'ASUS FHD Gaming Laptop'} price={700} imageUrl={'/src/assets/images/ourproductsImages/laptop.png'} /> </div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'Curology Product Set '} price={500} imageUrl={'/src/assets/images/ourproductsImages/product-set.png'} /> </div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'Kids Electric Car'} isNew price={960} imageUrl={'/src/assets/images/ourproductsImages/car.png'} /> </div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'Jr. Zoom Soccer Cleats'} price={1160} imageUrl={'/src/assets/images/ourproductsImages/Soccer-Cleats.png'} /> </div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'GP11 Shooter USB Gamepad'} isNew price={660} imageUrl={'/src/assets/images/ourproductsImages/Gamepad.png'} /> </div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'Quilted Satin Jacket'} price={660} imageUrl={'/src/assets/images/ourproductsImages/Jacket.png'} /> </div>
+        </div>
+        <div className="max-w-56 mx-auto">
+          <SiteBtn text={'View All Products'} />
+        </div>      </div>
+
     </div>
   )
 }
