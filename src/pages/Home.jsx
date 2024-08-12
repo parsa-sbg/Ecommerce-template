@@ -2,6 +2,7 @@ import HomeMenu from "../components/Home/HomeMenu"
 import HomeSlider from "../components/Home/HomeSlider/HomeSlider"
 import SectionHeader from "../components/Home/SectionHeader"
 import FlashSalesSlider from "../components/Home/FlashSalesSlider"
+import SiteBtn from "../components/SiteBtn"
 
 
 export default function Home() {
@@ -25,7 +26,10 @@ export default function Home() {
       {/* flash sales */}
       <div>
         <SectionHeader flagName='Today’s' title='Flash Sales' />
-        <FlashSalesSlider/>
+        <FlashSalesSlider />
+        <div className="max-w-56 mx-auto">
+          <SiteBtn text={'View All Products'} />
+        </div>
       </div>
 
 
