@@ -1,5 +1,4 @@
 import propTypes from 'prop-types'
-import { RiNumber3 } from 'react-icons/ri'
 
 
 export default function StatisticItem({ Icon, number, desc }) {
