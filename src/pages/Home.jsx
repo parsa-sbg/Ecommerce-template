@@ -14,6 +14,7 @@ import { LuGamepad } from "react-icons/lu";
 
 import ProductBox from "../components/Home/ProductBox"
 import NewArrivalBox from "../components/Home/NewArrivalBox"
+import OurServices from "../components/OurServices/OurServices"
 
 
 export default function Home() {
@@ -118,6 +119,10 @@ export default function Home() {
 
       </div>
 
+      {/* our services */}
+      <div className="mt-28">
+        <OurServices />
+      </div>
 
     </div>
   )
