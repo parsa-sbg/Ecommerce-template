@@ -1,5 +1,6 @@
 import { useRoutes } from "react-router-dom"
 import Home from "./pages/Home"
+import Page404 from "./pages/Page404"
 
 export default function Routes() {
     const routes = useRoutes([
@@ -9,7 +10,7 @@ export default function Routes() {
         },
         {
             path: '*',
-            element: <div>404 page</div>
+            element: <Page404/>
         }
     ])
 
