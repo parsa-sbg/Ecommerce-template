@@ -1,7 +1,7 @@
 import './App.css'
 import Header from './components/Header/Header'
 import Routes from './routes'
-
+import Footer from './components/Footer'
 function App() {
 
   return (
@@ -10,6 +10,7 @@ function App() {
       <div className='container'>
         <Routes></Routes>
       </div>
+      <Footer />
     </div>
   )
 }
