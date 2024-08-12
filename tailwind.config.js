@@ -11,7 +11,11 @@ export default {
     extend: {},
     container: {
       center: true,
-      padding:'.5rem'
+      padding: {
+        DEFAULT: '0.5rem',
+        'lg': '2rem',
+        'xl': '5rem'
+      }
       
     },
   },

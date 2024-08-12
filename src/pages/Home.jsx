@@ -13,12 +13,7 @@ import { CiHeadphones } from "react-icons/ci";
 import { LuGamepad } from "react-icons/lu";
 
 import ProductBox from "../components/Home/ProductBox"
-
-
-
-
-
-
+import NewArrivalBox from "../components/Home/NewArrivalBox"
 
 
 export default function Home() {
@@ -92,7 +87,37 @@ export default function Home() {
         </div>
         <div className="max-w-56 mx-auto">
           <SiteBtn text={'View All Products'} />
-        </div>      </div>
+        </div>
+      </div>
+
+
+      {/* New Arrival */}
+      <div className="mt-28">
+        <SectionHeader title={'New Arrival'} flagName={'Featured'} />
+
+        <div className="grid grid-cols-12 gap-5 ">
+
+          <div className="bg-black max-h-[500px] col-span-12 sm:col-span-6">
+            <NewArrivalBox title={'PlayStation 5'} desc={'Black and White version of the PS5 coming out on sale.'} imageUrl={'/src/assets/images/newarrivalImages/playstation.png'} />
+          </div>
+
+          <div className="col-span-12 sm:col-span-6 max-h-[500px] grid grid-cols-2 gap-5 grid-rows-2">
+            <div className="bg-black col-span-2">
+              <NewArrivalBox imageRight title={'Women’s Collections'} desc={'Featured woman collections that give you another vibe.'} imageUrl={'/src/assets/images/newarrivalImages/womens-collections.png'} />
+            </div>
+
+            <div className="bg-black " >
+              <NewArrivalBox title={'Speakers'} desc={'Amazon wireless speakers'} imageUrl={'/src/assets/images/newarrivalImages/speakers.png'} />
+            </div>
+            <div className="bg-black " >
+              <NewArrivalBox title={'Perfume'} desc={'GUCCI INTENSE OUD EDP'} imageUrl={'/src/assets/images/newarrivalImages/perfume.png'} />
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
 
     </div>
   )
