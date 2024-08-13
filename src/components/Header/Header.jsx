@@ -36,8 +36,8 @@ export default function Header() {
             <input className='bg-stone-200 dark:bg-gray-600 outline-none rounded-sm w-full h-full py-1.5 text-black pl-1 pr-6 dark:text-red-400' placeholder='What are you looking for?' type="text" />
             <FaSearch className='absolute top-0 bottom-0 right-2 my-auto' size={20} />
           </div>
-          <button className='btn hidden md:block btn-circle min-h-0 bg-transparent p-2 w-fit h-fit'><FaRegHeart size={20} /></button>
-          <button className='btn btn-circle min-h-0 bg-transparent p-2 w-fit h-fit'><AiOutlineShoppingCart size={20} /></button>
+          <button className='btn hidden md:block btn-circle min-h-0 bg-transparent p-2 w-fit h-fit dark:text-white'><FaRegHeart size={20} /></button>
+          <button className='btn btn-circle min-h-0 bg-transparent p-2 w-fit h-fit dark:text-white'><AiOutlineShoppingCart size={20} /></button>
 
           <div onClick={toggleMenu} className='z-50 min-w-8 h-8 md:hidden bg-transparent border dark:bg-gray-600 border-black rounded-sm flex items-center justify-center cursor-pointer'>
             <div className={`w-6 h-[3px] relative rounded-md bg-black transition-all ${isMobileMenuOpen ? 'invisible' : ''}

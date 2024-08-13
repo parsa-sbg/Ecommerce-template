@@ -20,9 +20,10 @@ function App() {
   }, [isDark])
 
 
-
+  // [#1d232a]
   return (
-    <div className={`app ${isDark && 'dark'} transition-colors text-black dark:text-white bg-white dark:bg-inherit`}>
+
+    <div className={`app ${isDark && 'dark '} transition-colors text-black bg-white dark:!bg-[#1d232a] dark:text-white  dark:bg-inherit`}>
       <Header />
       <div className='container'>
         <Routes></Routes>
@@ -30,6 +31,7 @@ function App() {
       <Footer />
       <ToggleThemeBtn isDark={isDark} setIsDark={setIsDark} />
     </div>
+
   )
 }
 

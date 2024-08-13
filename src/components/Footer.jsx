@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 
 export default function Footer() {
     return (
-        <footer className="footer bg-base-300 text-base-content p-10">
+        <footer className="footer bg-[#15191e] text-[#a6adbb] p-10">
             <nav>
                 <h6 className="footer-title">Support</h6>
                 <span className="">111 Bijoy sarani, Dhaka,  DH 1515, Bangladesh.</span>
