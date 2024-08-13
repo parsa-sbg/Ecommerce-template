@@ -10,14 +10,14 @@ export default function ProductBox({ imageUrl, title, price, priceBeforeOff, off
   return (
     <div>
 
-      <div className='group mb-4 relative flex items-center p-5 justify-center bg-stone-200 rounded-sm h-52 min-[450px]:p-10 min-[550px]:h-64 sm:h-48 md:h-[15rem] lg:p-12 '>
+      <div className='group mb-4 relative flex items-center p-5 justify-center bg-stone-200 dark:bg-slate-950 rounded-sm h-52 min-[450px]:p-10 min-[550px]:h-64 sm:h-48 md:h-[15rem] lg:p-12 '>
         <img className='h-full object-contain' src={imageUrl} alt="product image" />
 
-        <div className='cursor-pointer absolute top-2 right-2 bg-white rounded-full p-0.5'>
+        <div className='cursor-pointer absolute top-2 right-2 bg-white dark:bg-slate-950 rounded-full p-0.5'>
           <CiHeart size={22} />
         </div>
 
-        <div className='cursor-pointer absolute top-10 right-2 bg-white rounded-full p-0.5'>
+        <div className='cursor-pointer absolute top-10 right-2 bg-white dark:bg-slate-950 rounded-full p-0.5'>
           <IoEyeOutline size={22} />
         </div>
 

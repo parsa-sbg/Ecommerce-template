@@ -30,12 +30,12 @@ export default function Contact() {
 
             <form className="col-span-7 md:col-span-4 w-full flex justify-between flex-col p-7 gap-5 shadow-xl rounded-sm"  onSubmit={e => {e.preventDefault()}}>
                 <div className="grid grid-cols-12 gap-3">
-                    <input className="col-span-6 w-full h-10 rounded-sm outline-none py-1 px-2 bg-gray-100" placeholder="Your Name" type="text" />
-                    <input className="col-span-6 w-full h-10 rounded-sm outline-none py-1 px-2 bg-gray-100" placeholder="Your Phone" type="text" />
-                    <input className="col-span-12 w-full h-10 rounded-sm outline-none py-1 px-2 bg-gray-100" placeholder="Your Email" type="email" />
+                    <input className="col-span-6 w-full h-10 rounded-sm outline-none py-1 px-2 bg-gray-100 dark:bg-gray-600" placeholder="Your Name" type="text" />
+                    <input className="col-span-6 w-full h-10 rounded-sm outline-none py-1 px-2 bg-gray-100 dark:bg-gray-600" placeholder="Your Phone" type="text" />
+                    <input className="col-span-12 w-full h-10 rounded-sm outline-none py-1 px-2 bg-gray-100 dark:bg-gray-600" placeholder="Your Email" type="email" />
                 </div>
 
-                <textarea className="outline-none bg-gray-100 py-1 px-2 resize-none h-full rounded-sm" placeholder="Your Massage" name="" id=""></textarea>
+                <textarea className="outline-none bg-gray-100 dark:bg-gray-600 py-1 px-2 resize-none h-full rounded-sm" placeholder="Your Massage" name="" id=""></textarea>
 
                 <div className="h-fit col-span-12 ml-auto">
                     <SiteBtn noMargin text={'Send Massage'} />
