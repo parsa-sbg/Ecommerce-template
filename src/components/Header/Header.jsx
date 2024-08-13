@@ -3,7 +3,7 @@ import NavLinks from './NavLinks'
 import { FaSearch } from "react-icons/fa";
 import { FaRegHeart } from "react-icons/fa";
 import { AiOutlineShoppingCart } from "react-icons/ai";
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import MobileMenu from './MobileMenu';
 
 
@@ -14,9 +14,9 @@ export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
 
-  const toggleMenu = () => {
+  const toggleMenu = useCallback(() => {
     setIsMobileMenuOpen((prevState) => !prevState)
-  }
+  }, [])
 
   return (
 
@@ -51,7 +51,7 @@ export default function Header() {
 
       </div>
 
-      <MobileMenu isOpen={isMobileMenuOpen} />
+      <MobileMenu toggleMenu={toggleMenu} isOpen={isMobileMenuOpen} />
 
     </div>
 
