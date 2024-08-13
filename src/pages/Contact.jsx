@@ -6,7 +6,7 @@ import SiteBtn from '../components/SiteBtn'
 
 export default function Contact() {
     return (
-        <div className="grid w-full grid-cols-7 my-20 gap-10 md:gap-4 lg:gap-10">
+        <div className="grid w-full grid-cols-7 md:my-20 gap-10 md:gap-4 lg:gap-10">
 
             <div className="col-span-7 md:col-span-3 w-full p-7 flex flex-col gap-5 shadow-xl rounded-sm">
                 <div className="flex flex-col w-full gap-2 border-b-4 border-b-gray-300 pb-5" >

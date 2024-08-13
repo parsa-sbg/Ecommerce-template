@@ -19,13 +19,13 @@ import OurServices from "../components/OurServices/OurServices"
 
 export default function Home() {
   return (
-    <div className="mt-5 pb-48">
+    <div className="mt-5">
 
 
       {/* home section */}
-      <div className="grid grid-cols-12 gap-7">
+      <div className="grid grid-cols-12 mt-10 gap-7">
 
-        <div className="hidden md:block md:col-span-3 lg:col-span-3">
+        <div className="hidden md:block md:col-span-3 lg:col-span-3 border-r-2 pr-5">
           <HomeMenu />
         </div>
 
@@ -48,7 +48,7 @@ export default function Home() {
 
 
       {/* Categories */}
-      <div className="border-y border-stone-400 mt-14 py-20">
+      <div className="border-y border-stone-400 py-10">
         <SectionHeader flagName={'categories'} title={'Browse By Category'} />
         <div className="grid grid-cols-12 gap-5">
           <div className="col-span-6 sm:col-span-4 lg:col-span-2" ><CategoryItem Svg={CiMobile4} name={'Phones'} /></div>
@@ -74,7 +74,7 @@ export default function Home() {
 
 
       {/* Our Products */}
-      <div className="mt-28">
+      <div className="mt-20">
         <SectionHeader flagName={'Our Products'} title={'Explore Our Products'} />
         <div className="grid grid-cols-12 gap-5">
           <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'Breed Dry Dog Food'} isNew price={100} imageUrl={'/src/assets/images/ourproductsImages/dog-food.png'} /> </div>
@@ -93,7 +93,7 @@ export default function Home() {
 
 
       {/* New Arrival */}
-      <div className="mt-28">
+      <div className="mt-10">
         <SectionHeader title={'New Arrival'} flagName={'Featured'} />
 
         <div className="grid grid-cols-12 gap-5 ">
@@ -120,7 +120,7 @@ export default function Home() {
       </div>
 
       {/* our services */}
-      <div className="mt-28">
+      <div className="my-28">
         <OurServices />
       </div>
 

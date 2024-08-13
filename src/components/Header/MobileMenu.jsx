@@ -14,7 +14,7 @@ export default function MobileMenu({ isOpen }) {
                     <HomeMenu></HomeMenu>
                 </div>
                 <div className=' dark:bg-black flex flex-col'>
-                    <h2 className="pl-5 mb-4 relative before:absolute before:left-0 before:top-0 before:bottom-0 before:m-auto before:w-4 before:h-1 before:bg-red-600" >categories : </h2>
+                    <h2 className="pl-5 mb-4 relative before:absolute before:left-0 before:top-0 before:bottom-0 before:m-auto before:w-4 before:h-1 before:bg-red-600" >pages : </h2>
                     <NavLinks className={'flex gap-5 justify-center break-words text-nowrap flex-wrap flex-col'} />
                     <span className='flex w-fit items-center gap-2 cursor-pointer hover:text-red-600 transition-colors'>fovrates <FaRegHeart /></span>
 
