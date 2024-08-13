@@ -21,9 +21,9 @@ export default function Header() {
   return (
 
 
-    <div className='container relative border-b'>
+    <div className=' container relative h-[77.41px] border-b'>
 
-      <div className="items-center flex justify-between py-5 gap-1">
+      <div className="items-center flex justify-between py-5 gap-1 fixed top-0 right-0 left-0 bg-white z-50 container">
         <div className='flex text-red-600'>
           <Logo />
         </div>
@@ -39,7 +39,7 @@ export default function Header() {
           <button className='btn hidden md:block btn-circle min-h-0 bg-transparent p-2 w-fit h-fit'><FaRegHeart size={20} /></button>
           <button className='btn btn-circle min-h-0 bg-transparent p-2 w-fit h-fit'><AiOutlineShoppingCart size={20} /></button>
 
-          <div onClick={toggleMenu} className='min-w-8 h-8 md:hidden bg-transparent border border-black rounded-sm flex items-center justify-center cursor-pointer'>
+          <div onClick={toggleMenu} className='z-50 min-w-8 h-8 md:hidden bg-transparent border border-black rounded-sm flex items-center justify-center cursor-pointer'>
             <div className={`w-6 h-[3px] relative rounded-md bg-black transition-all ${isMobileMenuOpen ? 'invisible' : ''}
             after:rounded-md after:transition-all after:w-6 after:h-[3px] after:bg-black after:top-2 after:absolute after:visible ${isMobileMenuOpen ? 'after:rotate-45 after:-translate-y-2' : ''}
             before:rounded-md before:transition-all before:w-6 before:h-[3px] before:bg-black before:bottom-2 before:absolute before:visible ${isMobileMenuOpen ? 'before:-rotate-45 before:translate-y-2 ' : ''}`}>
@@ -48,10 +48,12 @@ export default function Header() {
 
         </div>
 
+        <MobileMenu toggleMenu={toggleMenu} isOpen={isMobileMenuOpen} />
 
       </div>
 
-      <MobileMenu toggleMenu={toggleMenu} isOpen={isMobileMenuOpen} />
+      <div className={` ${!isMobileMenuOpen && 'hidden'} fixed w-screen h-screen top-0 bottom-0 right-0 bg-black opacity-20 z-10`}></div>
+
 
     </div>
 
