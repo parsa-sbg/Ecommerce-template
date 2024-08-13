@@ -4,6 +4,7 @@ import { PiCurrencyCircleDollarLight } from "react-icons/pi";
 import { IoGiftSharp } from "react-icons/io5";
 import { FaSackDollar } from "react-icons/fa6";
 import ManagerBox from "../components/About/ManagerBox";
+import OurServices from '../components/OurServices/OurServices'
 
 
 export default function About() {
@@ -35,13 +36,18 @@ export default function About() {
 
 
       {/* managers */}
-      <div className="grid grid-cols-12 gap-5 mt-20 mb-40">
+      <div className="grid grid-cols-12 gap-5 mt-20 ">
         <div className="col-span-12 text-center sm:col-span-6 md:col-span-4 md:text-start" ><ManagerBox name={'Tom Cruise'} jobPosition={'Founder & Chairman'} imageUrl={'/src/assets/images/ourstoryImages/person1.png'} /></div>
         <div className="col-span-12 text-center sm:col-span-6 md:col-span-4 md:text-start" ><ManagerBox name={'Emma Watson'} jobPosition={'Managing Director'} imageUrl={'/src/assets/images/ourstoryImages/person2.png'} /></div>
         <div className="sm:col-span-3 md:hidden"></div>
         <div className="col-span-12 text-center sm:col-span-6 md:col-span-4 md:text-start" ><ManagerBox name={'Will Smith'} jobPosition={'Product Designer'} imageUrl={'/src/assets/images/ourstoryImages/person3.png'} /></div>
       </div>
 
+
+      {/* services */}
+      <div className="mb-20 mt-32">
+        <OurServices />
+      </div>
 
     </div>
   )
