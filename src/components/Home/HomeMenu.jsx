@@ -1,8 +1,8 @@
-import { useState } from "react";
+import { memo, useState } from "react";
 import { FaAngleRight } from "react-icons/fa6";
 
 
-export default function HomeMenu() {
+export default memo(function HomeMenu() {
 
     const [openMenuIds, setOpenMenuIds] = useState([])
 
@@ -49,20 +49,20 @@ export default function HomeMenu() {
             ]
         },
         {
-            id:1000,
-            name:'Electronics'
+            id: 1000,
+            name: 'Electronics'
         },
         {
-            id:1001,
-            name:'Home & Lifestyle'
+            id: 1001,
+            name: 'Home & Lifestyle'
         },
         {
-            id:1002,
-            name:'Medicine'
+            id: 1002,
+            name: 'Medicine'
         },
         {
-            id:1003,
-            name:'Sports & Outdoor'
+            id: 1003,
+            name: 'Sports & Outdoor'
         }
     ]
 
@@ -83,7 +83,7 @@ export default function HomeMenu() {
             {/* menu */}
             {allMenus.map(menu => (
                 <li key={menu.id}>
-                    <span className="flex justify-between items-center cursor-pointer hover:text-red-600 transition-colors" onClick={() => { menu.subMenus &&  toggleMenu(menu.id) }}>{menu.name} {menu.subMenus ? <FaAngleRight className={` transition-transform ${openMenuIds.includes(menu.id) ? 'rotate-90' : ''}`} size={12} /> : ''} </span>
+                    <span className="flex justify-between items-center cursor-pointer hover:text-red-600 transition-colors" onClick={() => { menu.subMenus && toggleMenu(menu.id) }}>{menu.name} {menu.subMenus ? <FaAngleRight className={` transition-transform ${openMenuIds.includes(menu.id) ? 'rotate-90' : ''}`} size={12} /> : ''} </span>
 
                     {/* submenu */}
                     <ul className={`transition-all flex flex-col ml-5 pl-1 overflow-hidden max-h-0 ${openMenuIds.includes(menu.id) ? 'max-h-36 border-l py-1' : ''}`}>
@@ -105,4 +105,4 @@ export default function HomeMenu() {
 
         </ul>
     )
-}
+})
