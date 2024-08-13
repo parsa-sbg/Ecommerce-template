@@ -20,7 +20,7 @@ export default function About() {
           <p className="mt-5 text-lg">Exclusive has more than 1 Million products to offer, growing at a very fast. Exclusive offers a diverse assotment in categories ranging  from consumer.</p>
         </div>
         <div className="col-span-2 sm:col-span-1 sm:order-3">
-          <img className="w-full h-full object-contain" src="/src/assets/images/ourstoryImages/ourstory.png" alt="" />
+          <img className="w-full h-full object-contain" src="/public/assets/images/ourstoryImages/ourstory.png" alt="" />
         </div>
       </div>
 
@@ -37,10 +37,10 @@ export default function About() {
 
       {/* managers */}
       <div className="grid grid-cols-12 gap-5 mt-20 ">
-        <div className="col-span-12 text-center sm:col-span-6 md:col-span-4 md:text-start" ><ManagerBox name={'Tom Cruise'} jobPosition={'Founder & Chairman'} imageUrl={'/src/assets/images/ourstoryImages/person1.png'} /></div>
-        <div className="col-span-12 text-center sm:col-span-6 md:col-span-4 md:text-start" ><ManagerBox name={'Emma Watson'} jobPosition={'Managing Director'} imageUrl={'/src/assets/images/ourstoryImages/person2.png'} /></div>
+        <div className="col-span-12 text-center sm:col-span-6 md:col-span-4 md:text-start" ><ManagerBox name={'Tom Cruise'} jobPosition={'Founder & Chairman'} imageUrl={'/public/assets/images/ourstoryImages/person1.png'} /></div>
+        <div className="col-span-12 text-center sm:col-span-6 md:col-span-4 md:text-start" ><ManagerBox name={'Emma Watson'} jobPosition={'Managing Director'} imageUrl={'/public/assets/images/ourstoryImages/person2.png'} /></div>
         <div className="sm:col-span-3 md:hidden"></div>
-        <div className="col-span-12 text-center sm:col-span-6 md:col-span-4 md:text-start" ><ManagerBox name={'Will Smith'} jobPosition={'Product Designer'} imageUrl={'/src/assets/images/ourstoryImages/person3.png'} /></div>
+        <div className="col-span-12 text-center sm:col-span-6 md:col-span-4 md:text-start" ><ManagerBox name={'Will Smith'} jobPosition={'Product Designer'} imageUrl={'/public/assets/images/ourstoryImages/person3.png'} /></div>
       </div>
 
 

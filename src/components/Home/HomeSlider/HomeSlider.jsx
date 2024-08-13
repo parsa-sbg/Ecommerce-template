@@ -16,9 +16,9 @@ export default function HomeSlider() {
                 slidesPerView={1}
                 pagination={{ clickable: true }}
             >
-                <SwiperSlide> <img src="/src/assets/images/swiperImages/Frame560.png" alt="" /> </SwiperSlide>
-                <SwiperSlide> <img src="/src/assets/images/swiperImages/Frame560.png" alt="" /> </SwiperSlide>
-                <SwiperSlide> <img src="/src/assets/images/swiperImages/Frame560.png" alt="" /> </SwiperSlide>
+                <SwiperSlide> <img src="/public/assets/images/swiperImages/Frame560.png" alt="" /> </SwiperSlide>
+                <SwiperSlide> <img src="/public/assets/images/swiperImages/Frame560.png" alt="" /> </SwiperSlide>
+                <SwiperSlide> <img src="/public/assets/images/swiperImages/Frame560.png" alt="" /> </SwiperSlide>
             </Swiper>
         </div>
     )
