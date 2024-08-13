@@ -65,10 +65,10 @@ export default function Home() {
       <div className="mt-14">
         <SectionHeader isNeedViewAllBtn={true} flagName={'This Month'} title={'Best Selling Products'} />
         <div className="grid grid-cols-12 gap-5">
-          <div className="col-span-6 sm:col-span-4 lg:col-span-3 "> <ProductBox title={'Gucci duffle bag'} price={960} priceBeforeOff={1160} imageUrl={'/public/assets/images/bestsellingImages/bookself.png'} /></div>
-          <div className="col-span-6 sm:col-span-4 lg:col-span-3 "> <ProductBox title={'Gucci duffle bag'} price={960} priceBeforeOff={1160} imageUrl={'/public/assets/images/bestsellingImages/bag.png'} /></div>
-          <div className="col-span-6 sm:col-span-4 lg:col-span-3 "> <ProductBox title={'Gucci duffle bag'} price={960} priceBeforeOff={1160} imageUrl={'/public/assets/images/bestsellingImages/coat.png'} /></div>
-          <div className="col-span-6 sm:col-span-4 lg:col-span-3 "> <ProductBox title={'Gucci duffle bag'} price={960} priceBeforeOff={1160} imageUrl={'/public/assets/images/bestsellingImages/cooler.png'} /></div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3 "> <ProductBox title={'Gucci duffle bag'} price={960} priceBeforeOff={1160} imageUrl={'/assets/images/bestsellingImages/BookSelf.png'} /></div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3 "> <ProductBox title={'Gucci duffle bag'} price={960} priceBeforeOff={1160} imageUrl={'/assets/images/bestsellingImages/bag.png'} /></div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3 "> <ProductBox title={'Gucci duffle bag'} price={960} priceBeforeOff={1160} imageUrl={'/assets/images/bestsellingImages/coat.png'} /></div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3 "> <ProductBox title={'Gucci duffle bag'} price={960} priceBeforeOff={1160} imageUrl={'/assets/images/bestsellingImages/Cooler.png'} /></div>
         </div>
       </div>
 
@@ -77,14 +77,14 @@ export default function Home() {
       <div className="mt-20">
         <SectionHeader flagName={'Our Products'} title={'Explore Our Products'} />
         <div className="grid grid-cols-12 gap-5">
-          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'Breed Dry Dog Food'} isNew price={100} imageUrl={'/public/assets/images/ourproductsImages/dog-food.png'} /> </div>
-          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'CANON EOS DSLR Camera'} price={360} imageUrl={'/public/assets/images/ourproductsImages/camera.png'} /> </div>
-          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'ASUS FHD Gaming Laptop'} price={700} imageUrl={'/public/assets/images/ourproductsImages/laptop.png'} /> </div>
-          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'Curology Product Set '} price={500} imageUrl={'/public/assets/images/ourproductsImages/product-set.png'} /> </div>
-          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'Kids Electric Car'} isNew price={960} imageUrl={'/public/assets/images/ourproductsImages/car.png'} /> </div>
-          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'Jr. Zoom Soccer Cleats'} price={1160} imageUrl={'/public/assets/images/ourproductsImages/Soccer-Cleats.png'} /> </div>
-          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'GP11 Shooter USB Gamepad'} isNew price={660} imageUrl={'/public/assets/images/ourproductsImages/Gamepad.png'} /> </div>
-          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'Quilted Satin Jacket'} price={660} imageUrl={'/public/assets/images/ourproductsImages/Jacket.png'} /> </div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'Breed Dry Dog Food'} isNew price={100} imageUrl={'/assets/images/ourproductsImages/Dog-Food.png'} /> </div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'CANON EOS DSLR Camera'} price={360} imageUrl={'/assets/images/ourproductsImages/camera.png'} /> </div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'ASUS FHD Gaming Laptop'} price={700} imageUrl={'/assets/images/ourproductsImages/laptop.png'} /> </div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'Curology Product Set '} price={500} imageUrl={'/assets/images/ourproductsImages/Product-Set.png'} /> </div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'Kids Electric Car'} isNew price={960} imageUrl={'/assets/images/ourproductsImages/Car.png'} /> </div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'Jr. Zoom Soccer Cleats'} price={1160} imageUrl={'/assets/images/ourproductsImages/Soccer-Cleats.png'} /> </div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'GP11 Shooter USB Gamepad'} isNew price={660} imageUrl={'/assets/images/ourproductsImages/Gamepad.png'} /> </div>
+          <div className="col-span-6 sm:col-span-4 lg:col-span-3"> <ProductBox title={'Quilted Satin Jacket'} price={660} imageUrl={'/assets/images/ourproductsImages/Jacket.png'} /> </div>
         </div>
         <div className="max-w-56 mx-auto">
           <SiteBtn text={'View All Products'} />
@@ -99,19 +99,19 @@ export default function Home() {
         <div className="grid grid-cols-12 gap-5 ">
 
           <div className="bg-black max-h-[500px] col-span-12 sm:col-span-6">
-            <NewArrivalBox title={'PlayStation 5'} desc={'Black and White version of the PS5 coming out on sale.'} imageUrl={'/public/assets/images/newarrivalImages/playstation.png'} />
+            <NewArrivalBox title={'PlayStation 5'} desc={'Black and White version of the PS5 coming out on sale.'} imageUrl={'/assets/images/newarrivalImages/PlayStation.png'} />
           </div>
 
           <div className="col-span-12 sm:col-span-6 max-h-[500px] grid grid-cols-2 gap-5 grid-rows-2">
             <div className="bg-black col-span-2">
-              <NewArrivalBox imageRight title={'Women’s Collections'} desc={'Featured woman collections that give you another vibe.'} imageUrl={'/public/assets/images/newarrivalImages/womens-collections.png'} />
+              <NewArrivalBox imageRight title={'Women’s Collections'} desc={'Featured woman collections that give you another vibe.'} imageUrl={'/assets/images/newarrivalImages/Womens-Collections.png'} />
             </div>
 
             <div className="bg-black " >
-              <NewArrivalBox title={'Speakers'} desc={'Amazon wireless speakers'} imageUrl={'/public/assets/images/newarrivalImages/speakers.png'} />
+              <NewArrivalBox title={'Speakers'} desc={'Amazon wireless speakers'} imageUrl={'/assets/images/newarrivalImages/Speakers.png'} />
             </div>
             <div className="bg-black " >
-              <NewArrivalBox title={'Perfume'} desc={'GUCCI INTENSE OUD EDP'} imageUrl={'/public/assets/images/newarrivalImages/perfume.png'} />
+              <NewArrivalBox title={'Perfume'} desc={'GUCCI INTENSE OUD EDP'} imageUrl={'/assets/images/newarrivalImages/Perfume.png'} />
             </div>
           </div>
 
