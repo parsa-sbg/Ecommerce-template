@@ -1,6 +1,6 @@
 # E-Commerce React App
 
-[DEMO](https://ecommerce-template.liara.run)
+[DEMO](https://ecommerce-template.liara.run) (Temporarily disabled)
 
 ## Description
 
