@@ -1,6 +1,6 @@
 # E-Commerce React App
 
-[DEMO](https://ecommerce-template.liara.run/contact)
+[DEMO](https://ecommerce-template-omega.vercel.app/)
 
 ## Description
 
